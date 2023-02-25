@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/sun-circle.svg" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css" />
@@ -17,12 +18,13 @@
     ></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/scripts/script.js"></script>
-    <title>Document</title>
+    <title>Interviu</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <nav class="navbar py-4 px-0 navbar-expand-lg navbar-light gap-80">
+        <nav class="navbar py-4 px-0 navbar-expand-lg navbar-light gap-40">
           <a class="navbar-brand logo" href="#">LOGO</a>
           <button
             class="navbar-toggler"
@@ -73,26 +75,65 @@
         </nav>
       </div>
     </header>
+    <!-- HEADER -->
+
+    <!-- CONTENT -->
     <div class="content">
-      <div class="carousel-section">
-        <div class="owl-carousel owl-theme">
-          <div class="item" style="background: url(./assets/img/mountain.jpg)">
-            <div class="container">Test</div>
-          </div>
-          <div class="item" style="background: url(./assets/img/mountain.jpg)">
-            <div class="container">Test2</div>
-          </div>
-          <div class="item" style="background: url(./assets/img/mountain.jpg)">
-            <div class="container">Test3</div>
+      <!-- CARUSEL -->
+      <div class="carousel-section position-relative">
+        <div class="owl-carousel owl-theme"></div>
+        <div class="carousel-overlay position-absolute w-100 h-100">
+          <div class="container h-100">
+            <div class="row h-100">
+              <div class="col">
+                <div class="carousel-overlay-content">
+                  <div class="social-media pt-3">
+                    <div class="social">
+                      <a href="#"
+                        ><img src="./assets/img/facebook.svg" alt="f"
+                      /></a>
+                    </div>
+                    <div class="social">
+                      <a href="#"
+                        ><img src="./assets/img/twitter.svg" alt="t"
+                      /></a>
+                    </div>
+                    <div class="social">
+                      <a href="#"
+                        ><img src="./assets/img/youtube.svg" alt="y"
+                      /></a>
+                    </div>
+                    <div class="social">
+                      <a href="#"
+                        ><img src="./assets/img/google-plus.svg" alt="g"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="custom-carousel-arrows">
+                    <span class="arrow-prev"
+                      ><img src="./assets/img/arrow-left.svg" alt="arrow-left"
+                    /></span>
+                    <span class="arrow-next"
+                      ><img
+                        src="./assets/img/arrow-right.svg"
+                        alt="arrow-right"
+                    /></span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- CARUSEL -->
+
+      <!-- OFFER SECTION -->
       <div class="offer-section">
         <div class="container">
           <div class="row">
             <div class="col">
-              <div class="planet p-2">
-                <img src="./assets/img/planet-svgrepo-com.svg" />
+              <div class="planet p-2 mt-5">
+                <img src="./assets/img/planet-svgrepo-com.svg" alt="planet" />
               </div>
               <div class="offer-headline p-2">
                 <h2 class="text-center">
@@ -112,19 +153,29 @@
                 style="background: url(./assets/img/mountain.svg)"
               >
                 <button class="btn btn-secondary custom-button">
-                  Vezi ofertele
+                  <img src="./assets/img/star.svg" alt="star" /><span
+                    >Vezi ofertele</span
+                  >
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- OFFER SECTION -->
+
+      <!-- INFO SECTION -->
       <div class="info-section min-height-400 mt-5">
         <div class="container">
           <div class="row">
             <div class="col">
               <div class="sun-image">
-                <img class="rotate" src="./assets/img/sun-circle.svg" />
+                <img
+                  class="rotate"
+                  src="./assets/img/sun-circle.svg"
+                  loading="lazy"
+                  alt="sun"
+                />
               </div>
               <div class="info-headline my-5">
                 <h2 class="text-center">
@@ -151,9 +202,12 @@
           </div>
         </div>
       </div>
+      <!-- INFO SECTION -->
+
+      <!-- VIDEO SECTION -->
       <div
         class="video-section min-height-400"
-        style="background: url(./assets/img/beach.jpg)"
+        style="background: url(./assets/img/beach.jpg) fixed"
       >
         <div class="container py-5">
           <div class="row">
@@ -172,16 +226,28 @@
                 </p>
               </div>
               <div class="play-button">
-                <img src="./assets/img/play-button.svg" />
+                <img
+                  src="./assets/img/play-button.svg"
+                  alt="plane"
+                  loading="lazy"
+                />
                 <h2 class="text-center">VEZI CLIPUL</h2>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- VIDEO SECTION -->
+
+      <!-- NEWS -->
       <div class="news-section min-height-400 py-5">
         <div class="news-headline">
-          <img src="./assets/img/paper-plane.svg" class="mb-2" />
+          <img
+            src="./assets/img/paper-plane.svg"
+            alt="paper-plane"
+            loading="lazy"
+            class="mb-2"
+          />
           <h2 class="text-center">
             NOUTATI & <span class="font-weight-bold">ARTICOLE</span>
           </h2>
@@ -190,7 +256,11 @@
           <div class="row">
             <div class="col col-12 col-md-12 col-lg-6 custom-card d-flex">
               <div class="card-image">
-                <img src="./assets/img/vacanta.jpg" alt="vacanta" />
+                <img
+                  src="./assets/img/vacanta.jpg"
+                  loading="lazy"
+                  alt="vacanta"
+                />
               </div>
               <div class="card-content">
                 <h3 class="position-relative">Lorem, ipsum dolor.</h3>
@@ -204,7 +274,11 @@
             </div>
             <div class="col col-12 col-md-12 col-lg-6 custom-card d-flex">
               <div class="card-image">
-                <img src="./assets/img/vacanta.jpg" alt="vacanta" />
+                <img
+                  src="./assets/img/vacanta.jpg"
+                  loading="lazy"
+                  alt="vacanta"
+                />
               </div>
               <div class="card-content">
                 <h3 class="position-relative">Lorem, ipsum dolor.</h3>
@@ -218,7 +292,11 @@
             </div>
             <div class="col col-12 col-md-12 col-lg-6 custom-card d-flex">
               <div class="card-image">
-                <img src="./assets/img/vacanta.jpg" alt="vacanta" />
+                <img
+                  src="./assets/img/vacanta.jpg"
+                  loading="lazy"
+                  alt="vacanta"
+                />
               </div>
               <div class="card-content">
                 <h3 class="position-relative">Lorem, ipsum dolor.</h3>
@@ -232,7 +310,11 @@
             </div>
             <div class="col col-12 col-md-12 col-lg-6 custom-card d-flex">
               <div class="card-image">
-                <img src="./assets/img/vacanta.jpg" alt="vacanta" />
+                <img
+                  src="./assets/img/vacanta.jpg"
+                  loading="lazy"
+                  alt="vacanta"
+                />
               </div>
               <div class="card-content">
                 <h3 class="position-relative">Lorem, ipsum dolor.</h3>
@@ -252,18 +334,152 @@
           </button>
         </div>
       </div>
-      <div
-        class="form-section min-height-400"
-        style="background: url(./assets/img/mountain.jpg)"
-      ></div>
+      <!-- NEWS -->
+
+      <!-- FORMULAR -->
+      <div class="form-section position-relative">
+        <div
+          class="bg-blur"
+          style="background: url(./assets/img/mountain.jpg)"
+        ></div>
+        <div class="form-content py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="form-heading">
+                  <img
+                    class="mb-2"
+                    src="./assets/img/envelope.svg"
+                    alt="envelope"
+                    loading="lazy"
+                  />
+                  <h2 class="mb-4">
+                    ALERTA <span class="font-weight-bold">DE VACANTA!</span>
+                  </h2>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+                    natus omnis maiores.
+                  </p>
+                </div>
+                <form class="form">
+                  <div class="inputs">
+                    <div class="form-group">
+                      <label for="input1">Destinatia dorita</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="input1"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="input2">Buget maxim</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="input2"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="input3">Nume si prenume</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="input3"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="input4">E-mail</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="input4"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    CREEAZA ALERTA
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FORMULAR -->
+
+      <!-- VIDEO OVERLAY -->
+      <div class="video-overlay position-fixed d-none">
+        <div class="overlay w-100 h-100"></div>
+        <div class="video-container w-100">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="video-inner r-16 p-4">
+                  <div class="close-video-container">
+                    <div class="close-video">
+                      <img
+                        src="./assets/img/close.svg"
+                        loading="lazy"
+                        alt="close"
+                      />
+                    </div>
+                  </div>
+                  <div class="video">
+                    <iframe
+                      src="https://www.youtube.com/embed/2EQusY1hChU"
+                      allow="fullscreen"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- VIDEO OVERLAY -->
     </div>
+    <!-- CONTENT -->
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col">Test</div>
+          <div class="col">
+            <div class="footer-links">
+              <ul class="m-0 py-4">
+                <li><a href="#">Acasa</a></li>
+                <li><a href="#">Turism intern</a></li>
+                <li><a href="#">Turism extern</a></li>
+                <li><a href="#">Oferte speciale</a></li>
+                <li><a href="#">Bilete avion</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Termeni si conditii</a></li>
+                <li><a href="#">Politica de confidentialitate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="evonomix">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="py-4 m-0">
+                Developed with love by
+                <span class="font-weight-bold">EVONOMIX</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- FOOTER -->
+
     <script src="./owlcarousel/owl.carousel.min.js"></script>
   </body>
 </html>
